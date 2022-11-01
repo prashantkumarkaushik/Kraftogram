@@ -15,9 +15,9 @@ const Navbar = () => {
     <div className='py-4 bg-background'>
       <div className='flex justify-between w-[95vw] mx-auto items-center '>
         <div className='flex items-center'>
-          <GiHamburgerMenu onClick={handleClick} className={`text-gray-100 text-3xl`} />
+          <GiHamburgerMenu onClick={handleClick} className={`text-gray-100 text-3xl cursor-pointer`} />
           <span className=' text-2xl font-poppins font-bold px-4 text-gray-100'>
-            <span className='text-text-2'>Krafto</span><span className=''>Gram</span> </span>
+            <span className='text-text-2 cursor-pointer'>Krafto</span><span className=''>Gram</span> </span>
         </div>
         <div className='flex hidden md:flex'>
           <input type='text' className='border-solid border-2 border-gray-300 w-[43vw] rounded-lg' />
