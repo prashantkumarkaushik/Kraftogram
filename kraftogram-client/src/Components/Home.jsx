@@ -1,13 +1,17 @@
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import Navbar from "./Navbar";
+import PostSection from "./Posts.section";
+import Sidebar from "./Sidebar";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Sidebar />
+      <div className="flex ">
+        <Sidebar />
+        <PostSection />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
