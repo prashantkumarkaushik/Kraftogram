@@ -6,10 +6,12 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      
       <div className="flex ">
         <Sidebar />
         <PostSection />
       </div>
+      
     </div>
   );
 };
