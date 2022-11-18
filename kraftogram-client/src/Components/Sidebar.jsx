@@ -15,16 +15,16 @@ const Sidebar = () => {
         } `}
       >
         <div
-          className={`flex items-center hover:bg-gray-700  text-xl  ${
-            isActive ? "justify-center" : "ml-7"
+          className={`flex items-center hover:bg-gray-700 duration-300 cursor-pointer transition-all text-xl  ${
+            isActive ? "justify-center" : "pl-7"
           }`}
         >
           <FaHome className={`${isActive ? "text-3xl my-3" : "text-2xl"} `} />
           <span className={` ${isActive ? "hidden" : "ml-2 py-3"}`}>Home</span>
         </div>
         <div
-          className={`flex items-center text-xl ${
-            isActive ? "justify-center" : "ml-7"
+          className={`flex items-center hover:bg-gray-700 duration-500 cursor-pointer transition-all text-xl ${
+            isActive ? "justify-center" : "pl-7"
           }`}
         >
           <FaFire className={`${isActive ? "text-3xl my-3" : "text-2xl"} `} />
@@ -33,8 +33,8 @@ const Sidebar = () => {
           </span>
         </div>
         <div
-          className={`flex items-center text-xl ${
-            isActive ? "justify-center" : "ml-7"
+          className={`flex items-center hover:bg-gray-700 duration-700 cursor-pointer transition-all text-xl ${
+            isActive ? "justify-center" : "pl-7"
           }`}
         >
           <MdVideoLibrary
@@ -43,8 +43,8 @@ const Sidebar = () => {
           <span className={` ${isActive ? "hidden" : "ml-2 py-3"}`}>DIY</span>
         </div>
         <div
-          className={`flex items-center text-xl ${
-            isActive ? "justify-center" : "ml-7"
+          className={`flex items-center hover:bg-gray-700 duration-1000 cursor-pointer transition-all text-xl ${
+            isActive ? "justify-center" : "pl-7"
           }`}
         >
           <IoTimerSharp
