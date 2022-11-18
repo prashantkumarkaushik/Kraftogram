@@ -8,7 +8,7 @@ const Sidebar = () => {
   const { isActive } = useContext(BurgerContext);
 
   return (
-    <div className="fixed top-16 left-0 z-[1000]">
+    <div className="fixed top-16 left-0 z-[1000] ">
       <div
         className={`text-gray-100 w-[15vw]  h-[100vh] bg-background pt-4 border-t-[1.5px] border-solid border-gray-400  ${
           isActive ? "w-[75px]" : ""

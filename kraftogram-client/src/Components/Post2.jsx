@@ -1,9 +1,10 @@
 const Post2 = ({ postUrl, userImg }) => {
+  const title = "Title of the post  ";
   return (
-    <div className="w-60 h-60 mb-4 cursor-pointer mr-3">
+    <div className="w-64 h-60 mb-4 cursor-pointer mr-3 ">
       <div className="overflow-hidden rounded-t-lg">
         <img
-          className="w-60 hover:scale-105 hover:rounded-t-lg duration-700 transition-all h-40 rounded-t-lg"
+          className="w-64 hover:scale-110 hover:rounded-t-lg flex duration-1000 transition-all h-40 rounded-t-lg"
           src={`${postUrl}`}
         />
       </div>
@@ -15,9 +16,7 @@ const Post2 = ({ postUrl, userImg }) => {
       </div>
       <div className="relative -top-16 h-24 rounded-b-lg bg-background">
         <p className="text-sm text-gray-400 pl-3 pt-2">Author Name</p>
-        <p className="text-lg px-2 text-gray-200">
-          Title of the Post najfnha anfhkjhak
-        </p>
+        <p className="text-lg px-2 text-gray-200">{title}</p>
       </div>
     </div>
   );

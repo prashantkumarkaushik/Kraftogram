@@ -1,12 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 
 export const BurgerContext = createContext({
-  isActive: false,
+  isActive: true,
   setIsActive: null,
 });
 
 export const BurgerProvider = ({ children }) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const value = { isActive, setIsActive };
 
   useEffect(() => {
