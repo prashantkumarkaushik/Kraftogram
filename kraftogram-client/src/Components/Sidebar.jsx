@@ -10,8 +10,8 @@ const Sidebar = () => {
   return (
     <div className="fixed top-16 left-0 z-[1000] ">
       <div
-        className={`text-gray-100 w-[15vw]  h-[100vh] bg-background pt-4 border-t-[1.5px] border-solid border-gray-400  ${
-          isActive ? "w-[75px]" : ""
+        className={`text-gray-100   h-[100vh] bg-background pt-4 border-t-[1.5px] border-solid border-gray-400  ${
+          isActive ? "w-[75px]" : "w-[12rem]"
         } `}
       >
         <div
@@ -20,7 +20,7 @@ const Sidebar = () => {
           }`}
         >
           <FaHome className={`${isActive ? "text-3xl my-3" : "text-2xl"} `} />
-          <span className={` ${isActive ? "hidden" : "ml-2 py-3"}`}>Home</span>
+          <span className={` ${isActive ? "hidden" : "ml-2 py-3"} `}>Home</span>
         </div>
         <div
           className={`flex items-center hover:bg-gray-700 duration-500 cursor-pointer transition-all text-xl ${

@@ -17,7 +17,7 @@ const Post2 = ({ postUrl, userImg }) => {
         <img
           className={`${
             isActive ? "w-64" : "w[15.5rem]"
-          } hover:scale-110 hover:rounded-t-lg flex h-40 rounded-t-lg`}
+          } hover:scale-110 hover:rounded-t-lg duration-1000 flex h-40 rounded-t-lg`}
           src={`${postUrl}`}
         />
       </div>
