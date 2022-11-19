@@ -1,5 +1,9 @@
+import { useContext } from "react";
 import Post2 from "./Post2";
+import { BurgerContext } from "../contexts/Hamburger.context";
+
 const PostSection = () => {
+  const { isActive } = useContext(BurgerContext);
   const postData = [
     {
       id: 1,
@@ -101,11 +105,19 @@ const PostSection = () => {
     },
   ];
   return (
-    <div className="my-10 w-[88vw] ml-24">
-      <p className=" text-center w-fit mb-6 text-4xl border-y-4 border-solid border-background mx-6 font-extrabold font-poppins">
+    <div className={` my-10 w-[88vw] mx-auto `}>
+      <p
+        className={` text-center w-fit mb-6 text-4xl border-y-4 border-solid border-background ${
+          isActive ? "mx-6" : "ml-36"
+        } font-extrabold font-poppins `}
+      >
         Posts
       </p>
-      <div className="h-auto flex flex-wrap items-center justify-center gap-5">
+      <div
+        className={`h-auto flex flex-wrap ${
+          isActive ? "mx-auto" : "ml-28"
+        } items-center justify-center gap-5`}
+      >
         {postData.map((post) => (
           <Post2 id={post.id} postUrl={post.postUrl} userImg={post.userImg} />
         ))}
